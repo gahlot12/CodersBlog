@@ -7,7 +7,7 @@ A full-stack blog application built with **Django (backend)** and **React.js (fr
 ## Live URLs
 
 - **Frontend**: [https://coders-blog-iota.vercel.app/](https://coders-blog-iota.vercel.app/)
-- **Backend API**: [https://your-backend.onrender.com/api](https://your-backend.onrender.com/api)
+- **Backend API**: [https://coders-blog-backend.onrender.com/api](https://your-backend.onrender.com/api)
 
 ---
 
