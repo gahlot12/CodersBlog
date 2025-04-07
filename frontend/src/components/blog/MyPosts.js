@@ -13,7 +13,7 @@ const MyPosts = () => {
     const fetchMyPosts = async () => {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:8000/api/posts/', {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}posts/`, {
           headers: {
             'Authorization': `Bearer ${authTokens.access}`,
           },
@@ -39,7 +39,7 @@ const MyPosts = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/posts/${id}/`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}posts/${id}/`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${authTokens.access}`,

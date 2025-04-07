@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 
   const loginUser = async (email, password) => {
     try {
-      const response = await fetch('http://localhost:8000/api/token/', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}token/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ export const AuthProvider = ({ children }) => {
 
   const registerUser = async (username, email, password) => {
     try {
-      const response = await fetch('http://localhost:8000/api/users/', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}users/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ export const AuthProvider = ({ children }) => {
     }
     
     try {
-      const response = await fetch('http://localhost:8000/api/token/refresh/', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}token/refresh/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
