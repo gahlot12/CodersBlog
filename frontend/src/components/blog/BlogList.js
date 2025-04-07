@@ -70,7 +70,7 @@ const BlogList = () => {
         </div>
       </div>
 
-      {posts.length === 0 ? (
+      {posts?.length === 0 ? (
         <div className="alert alert-info">No blog posts available</div>
       ) : (
         <div className="row">
