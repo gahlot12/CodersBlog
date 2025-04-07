@@ -67,6 +67,7 @@ MIDDLEWARE = [
 # Configure CORS settings
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React app
+    "https://coders-blog-iota.vercel.app",
 ]
 
 # Configure REST Framework
